@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-registr.component.scss']
 })
 export class CreateRegistrComponent {
-
+  public genders: string[] = ['Male', 'Female'];
+  public packages: string[] = ['Weakly', 'Monthly', 'Yearly'];
 }

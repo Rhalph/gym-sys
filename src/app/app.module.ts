@@ -12,6 +12,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
 
 import { NgToastModule } from 'ng-angular-popup';
 import { NgConfirmModule } from 'ng-confirm-box';
@@ -32,6 +34,8 @@ import { NgConfirmModule } from 'ng-confirm-box';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    MatRadioModule,
+    MatSelectModule,
 
     NgToastModule,
     NgConfirmModule

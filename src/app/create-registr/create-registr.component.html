@@ -55,6 +55,36 @@
                     <mat-hint>Unit in meters</mat-hint>
                 </mat-form-field>
             </div>
+            <div class="col-md-6 mt-3">
+                <label id="example-radio-group-label">Do you require a trainer?</label>
+                <mat-radio-group class="example-radio-group">
+                    <mat-radio-button class="example-radio-button" *ngFor="let requireTrainer of ['Yes', 'No']" [value]="requireTrainer">
+                        {{requireTrainer}}
+                    </mat-radio-button>
+                </mat-radio-group>
+                <div>Your trainer is: </div>
+                <hr>
+            </div>
+            <div class="col-md-6 mt-3">
+                <label id="example-radio-group-label">What is your gender? </label>
+                <mat-radio-group class="example-radio-group">
+                    <mat-radio-button class="example-radio-button" *ngFor="let gender of genders" [value]="gender">
+                        {{gender}}
+                    </mat-radio-button>
+                </mat-radio-group>
+                <div>Your gender is: </div>
+                <hr>
+            </div>
+            <div class="col-md-6 mt-5">
+                <mat-form-field appearance="fill">
+                    <mat-label>Packages</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let package of packages" [value]="package">
+                        {{package}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
         </div>
     </form>
 </div>
