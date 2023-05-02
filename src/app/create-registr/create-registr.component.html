@@ -1,6 +1,6 @@
 <!-- logo -->
 <div class="text-center mt-4">
-    <img src="assets/gymlogo.png" alt="logo" width="380">
+    <img src="assets/gymlogo.png" alt="logo" width="280">
 </div>
 <!-- END logo -->
 
@@ -25,15 +25,34 @@
             <div class="col-md-6">
                 <mat-form-field appearance="outline">
                     <mat-label>Email</mat-label>
-                    <input matInput placeholder="">
-                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <input matInput type="email" placeholder="">
+                    <mat-icon matSuffix><i class="fa fa-envelope-o"></i></mat-icon>
                 </mat-form-field>
             </div>
             <div class="col-md-6">
                 <mat-form-field appearance="outline">
                     <mat-label>Phone</mat-label>
                     <input matInput type="tel" placeholder="">
-                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <mat-icon matSuffix><span class="material-icons-outlined">phone</span></mat-icon>
+                    <!-- <mat-icon matSuffix><i class="fa-light fa-phone"></i></mat-icon> -->
+                </mat-form-field>
+            </div>
+
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Weight</mat-label>
+                    <input matInput type="number" formControlName="weight" placeholder="">
+                    <!-- <mat-icon matSuffix>line_weight</mat-icon> -->
+                    <mat-icon matSuffix><span class="material-icons-outlined">scale</span></mat-icon>
+                    <mat-hint>Unit in KG</mat-hint>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Height</mat-label>
+                    <input matInput type="number" formControlName="height" placeholder="">
+                    <mat-icon matSuffix>line_weight</mat-icon>
+                    <mat-hint>Unit in meters</mat-hint>
                 </mat-form-field>
             </div>
         </div>
